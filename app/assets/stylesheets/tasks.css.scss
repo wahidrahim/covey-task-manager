@@ -1,3 +1,45 @@
-// Place all the styles related to the Tasks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.range-slider-handle {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+	color: #fff;
+	font-size: 75%;
+
+	border-radius: 1000px;
+}
+
+.button {
+	/*background: #E7EB90;*/
+}
+
+#urgency_slider .range-slider-active-segment {
+	background: #BA2E00;
+}
+
+#importance_slider .range-slider-active-segment {
+	background: #008CBA;
+}
+
+#task_urgency {
+	position: relative;
+	top: 50%;
+	transform: translateY(25%);
+}
+
+#task_importance {
+	position: relative;
+	top: 50%;
+	transform: translateY(25%);
+}
