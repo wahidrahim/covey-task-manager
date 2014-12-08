@@ -22,11 +22,16 @@ class TasksController < ApplicationController
   end
 
   def complete
+		task = Task.find(params[:id])
+		task.update(complete: !task.complete)
+
+		redirect_to tasks_all_path
   end
 
   def edit
   end
 
   def all
+		@tasks = Task.all
   end
 end

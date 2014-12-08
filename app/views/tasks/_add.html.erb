@@ -1,0 +1,58 @@
+<%= form_tag(controller: 'tasks', action: 'add') do %>
+
+	<div class='row'>
+
+		<div class='small-12 columns'>
+
+			<input id='task_name' name='task[name]' type='text' placeholder='name' />	
+
+		</div>
+
+	</div>
+
+	<div class='row'>
+
+		<div class='small-2 columns'>
+
+			<input id='task_urgency' name='task[urgency]' type='text' placeholder='urgency' />
+
+		</div>
+
+		<div class='small-10 columns'>
+
+			<div class="range-slider" id='urgency_slider' data-slider>
+				<span class="range-slider-handle" role="slider" tabindex="0">urgency</span>
+				<span class="range-slider-active-segment"></span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class='row'>
+
+		<div class='small-2 columns'>
+
+			<input id='task_importance' name='task[importance]' type='text' placeholder='importance' />
+
+		</div>
+
+		<div class='small-10 columns'>
+
+			<div class="range-slider" id='importance_slider' data-slider>
+				<span class="range-slider-handle" role="slider" tabindex="0">importance</span>
+				<span class="range-slider-active-segment"></span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class='row'>
+
+		<div class='small-12 columns'>
+			<%= submit_tag('add task', class: 'button expand') %>
+		</div>
+
+	</div>
+<% end %>
