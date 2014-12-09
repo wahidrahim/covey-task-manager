@@ -1,46 +1,36 @@
-<table>
+<table class='list-table'>
 	<thead>
-		<tr>
-			<th width='500'>Task</th>
-			<th>Urgency</th>
-			<th>Importance</th>
-			<th>Quadrant</th>
-			<th>Options</th>
-		</tr>
+		<th>Name</th>
+		<th>Urgency</th>
+		<th>Importance</th>
+		<th>Options</th>
 	</thead>
+
 	<tbody>
-	<% @tasks.each do |task| %>
-		<tr>
-			<td>
-				<% if task.complete %>
-					<strike><%= task.name %></strike>
-				<% else %>
-					<%= task.name %>
-				<% end %>
-			</td>
+	<% n = 0 %>
+	<% @quads.each do |quad| %>
 
-			<td>
-				<%= task.urgency %>
-			</td>
+		<% n += 1 %>
+		<% alternate = 1 %>
 
-			<td>
-				<%= task.importance %>
-			</td>
+		<% quad.each do |task| %>
 
-			<td>
-				TODO
-			</td>
-
-			<td>
-				<% if task.complete %>
-					<%= button_to 'unfinished', tasks_complete_path(id: task.id) %>
-				<% else %>
-					<%= button_to 'finished', tasks_complete_path(id: task.id) %>
-				<% end %>
-
-				<%= button_to 'clear', tasks_remove_path(id: task.id) %>
-			</td>
-		</tr>
-	<% end %>
-	</tbody>
-</table>
+			<tr class='<%= "quadrant-#{n}" %> <%= if alternate.even? then 'alternate-color' else 'normal-color' end %> <%= 'task-complete' if task.complete %>'>
+					<td>
+						<% if task.complete %>
+							<strike><%= task.name %></strike>
+						<% else %>
+							<%= task.name %>
+						<% end %>
+					</td>
+					<td><%= task.urgency %></td>
+					<td><%= task.importance %></td>
+					<td>
+						<%= link_to '[complete]', tasks_complete_path(id: task.id), method: :post %> <%= link_to '[clear]', tasks_remove_path(id: task.id), method: :delete %>
+					</td>
+				</tr>
+				<% alternate += 1 %>
+			<% end %>
+		<% end %>
+		</tbody>
+	</table>

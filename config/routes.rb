@@ -1,11 +1,12 @@
 CoveyTaskManager::Application.routes.draw do
   get "tasks/add"
-  get "tasks/remove"
+  delete "tasks/remove"
   get "tasks/complete"
   get "tasks/edit"
   get "tasks/all"
 
 	post "tasks/add"
+	post "tasks/complete"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

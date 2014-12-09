@@ -21,16 +21,17 @@
 }
 
 .button {
-	/*background: #E7EB90;*/
 }
 
-#urgency_slider .range-slider-active-segment {
-	background: #BA2E00;
-}
-
-#importance_slider .range-slider-active-segment {
-	background: #008CBA;
-}
+/*
+ *#urgency_slider .range-slider-active-segment {
+ *    background: #BA2E00;
+ *}
+ *
+ *#importance_slider .range-slider-active-segment {
+ *    background: #008CBA;
+ *}
+ */
 
 #task_urgency {
 	position: relative;
@@ -43,3 +44,33 @@
 	top: 50%;
 	transform: translateY(25%);
 }
+
+.list-table {
+	width: 100%;
+}
+
+th:nth-child(1) { width: 500px; }
+th:nth-child(2) { width: 100px; }
+th:nth-child(3) { width: 100px; }
+th:nth-child(4) { width: 200px; }
+
+.tableheaders {
+	font-size: 75%;
+	font-weight: bold;
+	background: #EDEDED;
+}
+
+/*.quadrant-1, .quadrant-2, .quadrant-3, .quadrant-4 { font-size: 75%; }*/
+
+
+.quadrant-1.normal-color { background: #FFEF73; }
+.quadrant-1.alternate-color { background: #FFF28A; }
+
+.quadrant-2.normal-color { background: #FFFD96; }
+.quadrant-2.alternate-color { background: #FCFBB1; }
+
+.quadrant-3.normal-color { background: #FFFD96; }
+.quadrant-3.alternate-color { background: #FCFBB1; }
+
+.quadrant-4.normal-color { background: #FFFEC4; }
+.quadrant-4.alternate-color { background: #FFFED4; }
