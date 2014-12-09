@@ -10,7 +10,6 @@
 // a. Base
 // b. Grid
 // c. Global
-// d. Media Query Ranges
 // e. Typography
 // 01. Accordion
 // 02. Alert Boxes
@@ -140,8 +139,8 @@ $include-html-global-classes: $include-html-classes;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
- $global-radius: 3px;
- $global-rounded: 1000px;
+ $global-radius: 16px;
+ $global-rounded: 16px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -418,7 +417,7 @@ $include-html-global-classes: $include-html-classes;
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+ $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
@@ -458,8 +457,8 @@ $include-html-global-classes: $include-html-classes;
 // $alert-button-border-color: $alert-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
-// $button-radius: $global-radius;
-// $button-round: $global-rounded;
+ $button-radius: $global-radius;
+ $button-round: $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
 // $button-disabled-opacity: 0.7;
@@ -1075,7 +1074,7 @@ $include-html-global-classes: $include-html-classes;
 // $range-slider-handle-border-width: 1px;
 // $range-slider-handle-border-style: solid;
 // $range-slider-handle-border-color: none;
- /*$range-slider-handle-radius: 300px;*/
+ /*$range-slider-handle-radius: 100px;*/
  /*$range-slider-handle-round: 20000px;*/
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;

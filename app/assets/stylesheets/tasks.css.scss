@@ -1,3 +1,7 @@
+h1 {
+	font-weight: 600;
+}
+
 .range-slider-handle {
 
 	display: flex;
@@ -17,10 +21,11 @@
 	color: #fff;
 	font-size: 75%;
 
-	border-radius: 1000px;
+	border-radius: 16px;
 }
 
 .button {
+	/*border-radius: 60px;*/
 }
 
 /*
