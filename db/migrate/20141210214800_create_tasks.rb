@@ -5,6 +5,8 @@ class CreateTasks < ActiveRecord::Migration
       t.integer :urgency
       t.integer :importance
       t.integer :quadrant
+      t.integer :mean
+      t.boolean :complete
 
       t.timestamps
     end

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CoveyTaskManager::Application.config.secret_key_base = '56eca5bc422ddf6594a59b0dcbe2f92da13ebc8ee91d5e1c18b1705c60c82b7a6c4d1d6038b1f1518cbc2a958fea4bf92b6d1fff652488c6428098ecb0a322f1'
+CtmChanges::Application.config.secret_key_base = 'b300202997da303167e9429d43b1edd9af1153d6e785ff45a625bb44a4e95a1bf6356411e83634965317b8f19af4f5da3fac7fe0fc19c7c361b5b37f00cf4448'

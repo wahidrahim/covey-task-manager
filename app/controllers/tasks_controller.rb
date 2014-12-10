@@ -32,10 +32,6 @@ class TasksController < ApplicationController
   end
 
   def all
-		quad1 = Task.where(quadrant: 1).order(urgency: :desc)
-		quad2 = Task.where(quadrant: 2).order(importance: :desc)
-		quad3 = Task.where(quadrant: 3).order(urgency: :desc)
-		quad4 = Task.where(quadrant: 4).order(importance: :desc)
-		@quads = [quad1, quad2, quad3, quad4];
+		@tasks = Task.order(:quadrant, mean: :desc)
   end
 end

@@ -21,5 +21,7 @@ class Task < ActiveRecord::Base
 		elsif urgency < 50 && importance < 50
 			self.quadrant = 4
 		end
+
+		self.mean = (self.urgency + self.importance) / 2
 	end
 end
