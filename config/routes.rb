@@ -1,4 +1,4 @@
-CtmChanges::Application.routes.draw do
+CoveyTaskManager::Application.routes.draw do
 	root 'tasks#all'
 
   get "tasks/all"

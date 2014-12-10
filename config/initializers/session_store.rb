@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-CtmChanges::Application.config.session_store :cookie_store, key: '_ctm-changes_session'
+CoveyTaskManager::Application.config.session_store :cookie_store, key: '_covey-task-manager_session'

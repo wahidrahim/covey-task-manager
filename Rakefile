@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-CtmChanges::Application.load_tasks
+CoveyTaskManager::Application.load_tasks
