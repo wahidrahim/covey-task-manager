@@ -5,9 +5,13 @@ one:
   urgency: 1
   importance: 1
   quadrant: 1
+  mean: 1
+  complete: false
 
 two:
   name: MyString
   urgency: 1
   importance: 1
   quadrant: 1
+  mean: 1
+  complete: false
