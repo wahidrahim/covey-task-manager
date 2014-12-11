@@ -1,6 +1,6 @@
 <%= form_for :task, url: tasks_add_path do |f| %>
 	<%= f.text_field :name, placeholder: 'name' %>
-	<%= f.range_field :urgency %>
-	<%= f.range_field :importance %>
+	<%= f.text_field :urgency, placeholder: 'urgency' %>
+	<%= f.text_field :importance, placeholder: 'importance' %>
 	<%= f.submit 'add task' %>
 <% end %>
