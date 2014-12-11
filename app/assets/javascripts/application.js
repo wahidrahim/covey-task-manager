@@ -34,7 +34,7 @@ $(document).ready(function() {
 		min: 0,
 		max: 100,
 		value: 50,
-		formater: function(urgency) { return 'urgency: ' + urgency; }
+		formater: function(urgency) { return 'importance: ' + urgency; }
 	})
 
 	importance_slider.on('slide', function(slideEvent) {

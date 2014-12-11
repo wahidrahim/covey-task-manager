@@ -1,8 +1,29 @@
 <%= form_for :task, url: tasks_add_path do |f| %>
-	<%= f.text_field :name, placeholder: 'name' %>
-	<%= f.text_field :urgency, placeholder: 'urgency' %>
-	<input id='urgency-slider' />
-	<%= f.text_field :importance, placeholder: 'importance' %>
-	<input id='importance-slider' />
-	<%= f.submit 'add task' %>
+
+	<div class='form-group'>
+		<%= f.text_field :name, class: 'form-control', placeholder: 'name' %>
+	</div>
+
+	<div class='form-group'>
+		<div class='input-group'>
+			<%= f.text_field :urgency, class: 'form-control', placeholder: 'urgency' %>
+			<span class='input-group-addon'>
+				<input id='urgency-slider', style='width: 85%' />
+			</span>
+		</div>
+	</div>
+
+	<div class='form-group'>
+		<div class='input-group'>
+			<%= f.text_field :importance, class: 'form-control', placeholder: 'importance' %>
+			<span class='input-group-addon'>
+				<input id='importance-slider', style='width: 85%' />
+			</span>
+		</div>
+	</div>
+
+	<div class='form-group'>
+		<%= f.submit 'add task', class: 'btn btn-block add-button' %>
+	</div>
+
 <% end %>

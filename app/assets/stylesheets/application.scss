@@ -15,5 +15,36 @@
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
-// override here
+
+// overrides
+
+.btn {
+	background: #149bdf;
+	color: #fff;
+}
+
+.table-header {
+	background: #EEEEEE;
+}
+
+.quadrant-1 {
+	background: #FFD360;
+}
+
+.quadrant-2 {
+	background: #FFE660;
+}
+
+.quadrant-3 {
+	background: #FFFA60;
+}
+
+.quadrant-4 {
+	background: #E0FF60;
+}
+
+.add-button {
+	height: 50px;
+}
+
 @import "bootstrap";
