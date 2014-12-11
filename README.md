@@ -11,7 +11,7 @@ I want to see how this app evolves over time. In the end, (when ever that is) it
 - heroku link: [http://nameless-castle-5087.herokuapp.com/](http://nameless-castle-5087.herokuapp.com/)
 - tasks are now sorted by:
     - [quadrants](http://michaelhyatt.com/wp-content/uploads/2011/03/covey-time-management-matrix.001.001.png)
-    - and in each quadrant, tasks are sorted by their "mean" which is `(urgency + imoprtance) / 2`. Result: better prioritization.
+    - in each quadrant, tasks are sorted by their "mean" which is `(urgency + imoprtance) / 2`. Result: better prioritization.
 
 ...
 
@@ -23,6 +23,6 @@ dec 9
 - using foundation
 
 dec 11
-![dec 11](http://i.imgur.com/dGpDEf0.png)
+![alt tag](http://i.imgur.com/dGpDEf0.png)
 
 - using bootstrap, I like this better. Still needs optimizing for different screen sizes.
