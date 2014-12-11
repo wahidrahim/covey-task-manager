@@ -1,6 +1,6 @@
-<table>
+<table class='table'>
 	<thead>
-		<tr>
+		<tr class='table-header'>
 			<th>Name</th>
 			<th>Urgency</th>
 			<th>Importance</th>
@@ -12,7 +12,7 @@
 
 	<tbody>
 	<% @tasks.each do |task| %>
-		<tr>
+		<tr class='<%= "quadrant-#{task.quadrant}" %>'>
 			<td><%= task.name %></td>
 			<td><%= task.urgency %></td>
 			<td><%= task.importance %></td>
