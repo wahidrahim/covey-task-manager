@@ -15,3 +15,30 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+//= require bootstrap-slider
+
+$(document).ready(function() {
+
+	var urgency_slider = $('#urgency-slider').slider({
+		min: 0,
+		max: 100,
+		value: 50,
+		formater: function(urgency) { return 'urgency: ' + urgency; }
+	})
+
+	urgency_slider.on('slide', function(slideEvent) {
+		$('#task_urgency').val(slideEvent.value);
+	});
+
+	var importance_slider = $('#importance-slider').slider({
+		min: 0,
+		max: 100,
+		value: 50,
+		formater: function(urgency) { return 'urgency: ' + urgency; }
+	})
+
+	importance_slider.on('slide', function(slideEvent) {
+		$('#task_importance').val(slideEvent.value);
+	});
+
+});
