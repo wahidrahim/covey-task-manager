@@ -1,37 +1,28 @@
 class TasksController < ApplicationController
 	def task_params
-		params.require(:task).permit(:name, :urgency, :importance)
+		return params.require(:task).permit(:name, :urgency, :importance)
 	end
 
-	def add
+	def ordered_tasks
+		return Task.order(:quadrant, mean: :desc)
+	end
+
+  def index
+		@tasks = ordered_tasks
+  end
+
+	def create
 		new_task = Task.new(task_params)
 
 		if new_task.save
-			# todo ajax
+			respond_to do |format|
+				format.html { redirect_to tasks_path }
+				@tasks = ordered_tasks
+				format.js
+			end
 		else
-			# todo forgot name?
+			# TODO
+			puts "o: #{new_task.errors.messages}"
 		end
-
-		redirect_to tasks_all_path
 	end
-
-  def remove
-		Task.destroy(params[:id])
-
-		redirect_to tasks_all_path
-  end
-
-  def complete
-		task = Task.find(params[:id])
-		task.update(complete: !task.complete)
-
-		redirect_to tasks_all_path
-  end
-
-  def edit
-  end
-
-  def all
-		@tasks = Task.order(:quadrant, mean: :desc)
-  end
 end

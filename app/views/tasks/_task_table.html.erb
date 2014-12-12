@@ -1,4 +1,4 @@
-<table class='table'>
+<table class='table' id='tasks_table'>
 	<thead>
 		<tr class='table-header'>
 			<th>Name</th>
@@ -19,8 +19,6 @@
 			<td><%= task.quadrant %></td>
 			<td><%= task.mean %></td>
 			<td>
-				<%= link_to 'complete', tasks_complete_path(id: task.id), method: :post %>
-				<%= link_to 'clear', tasks_remove_path(id: task.id), method: :delete %>
 			</td>
 		</tr>
 	<% end %>
