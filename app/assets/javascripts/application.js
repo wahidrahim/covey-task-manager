@@ -23,8 +23,10 @@ $(document).ready(function() {
 		min: 0,
 		max: 100,
 		value: 50,
-		formater: function(urgency) { return 'urgency: ' + urgency; }
-	})
+		formater: function(urgency) {
+			return 'urgency: ' + urgency;
+		}
+	});
 
 	urgency_slider.on('slide', function(slideEvent) {
 		$('#task_urgency').val(slideEvent.value);
@@ -40,5 +42,4 @@ $(document).ready(function() {
 	importance_slider.on('slide', function(slideEvent) {
 		$('#task_importance').val(slideEvent.value);
 	});
-
 });
