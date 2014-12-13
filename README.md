@@ -26,3 +26,9 @@ dec 11
 ![alt tag](http://i.imgur.com/dGpDEf0.png)
 
 - using bootstrap, I like this better. Still needs optimizing for different screen sizes.
+
+dec 13
+![alt tag](http://i.imgur.com/ZWOAm3Q.png)
+
+- I want to see and guage the urgency/importance of a task quickly: added percentage bars to the columns.
+- some minor ajax
