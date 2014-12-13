@@ -4,10 +4,13 @@
 			<thead>
 				<tr class='table-header'>
 					<th>Name</th>
-					<th>Urgency</th>
-					<th>Importance</th>
-					<th>Quadrant</th>
-					<th>Mean</th>
+					<th width='15%'>Urgency</th>
+					<th width='15%'>Importance</th>
+
+					<% if false %>
+						<th>Quadrant</th>
+						<th>Mean</th>
+					<% end %>
 					<th>Options</th>
 				</tr>
 			</thead>
@@ -16,10 +19,25 @@
 			<% @tasks.each do |task| %>
 				<tr class='<%= "quadrant-#{task.quadrant}" %>'>
 					<td><%= task.name %></td>
-					<td><%= task.urgency %></td>
-					<td><%= task.importance %></td>
-					<td><%= task.quadrant %></td>
-					<td><%= task.mean %></td>
+					<td>
+						<div class="progress">
+							<div class="urgency progress-bar" style="width: <%= task.urgency %>%;" >
+								<%= task.urgency %>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="progress">
+							<div class="importance progress-bar" style="width: <%= task.importance %>%;" >
+								<%= task.importance %>
+							</div>
+						</div>
+					</td>
+
+					<% if false %>
+						<td><%= task.quadrant %></td>
+						<td><%= task.mean %></td>
+					<% end %>
 					<td>
 						<%= link_to 'clear', task_path(task), method: :delete, remote: true %>
 					</td>
