@@ -21,6 +21,7 @@
 					<td><%= task.quadrant %></td>
 					<td><%= task.mean %></td>
 					<td>
+						<%= link_to 'clear', task_path(task), method: :delete, remote: true %>
 					</td>
 				</tr>
 			<% end %>
