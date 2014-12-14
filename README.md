@@ -31,4 +31,3 @@ dec 13
 ![alt tag](http://i.imgur.com/ZWOAm3Q.png)
 
 - I want to see and guage the urgency/importance of a task quickly: added percentage bars to the columns.
-- some minor ajax
