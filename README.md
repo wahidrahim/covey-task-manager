@@ -6,4 +6,4 @@ covey-task-manager
 As a productivity enthusiast I wanted to see a todo list that incorporated urgency and importance of tasks.
 [Heroku link](http://nameless-castle-5087.herokuapp.com/)
 
-![alt tag](http://i.imgur.com/ZWOAm3Q.png)
+![alt tag](http://i.imgur.com/Bw064US.png)
